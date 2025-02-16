@@ -1,0 +1,59 @@
+.windowWrapper {
+  --resize: 6px;
+
+  position: fixed;
+  display: grid;
+  grid-template-areas:
+    "tl tt tr"
+    "ll wd rr"
+    "bl bb br";
+
+  grid-template-columns: var(--resize) 1fr var(--resize);
+  grid-template-rows: var(--resize) 1fr var(--resize);
+}
+
+.windowContainer {
+  height: 100%;
+  width: 100%;
+  grid-area: wd;
+}
+
+.resizeTop {
+  cursor: n-resize;
+  grid-area: tt;
+}
+
+.resizeLeft {
+  cursor: w-resize;
+  grid-area: ll;
+}
+
+.resizeRight {
+  cursor: e-resize;
+  grid-area: rr;
+}
+
+.resizeBottom {
+  cursor: s-resize;
+  grid-area: bb;
+}
+
+.resizeTopLeft {
+  cursor: nw-resize;
+  grid-area: tl;
+}
+
+.resizeTopRight {
+  cursor: ne-resize;
+  grid-area: tr;
+}
+
+.resizeBottomLeft {
+  cursor: sw-resize;
+  grid-area: bl;
+}
+
+.resizeBottomRight {
+  cursor: se-resize;
+  grid-area: br;
+}

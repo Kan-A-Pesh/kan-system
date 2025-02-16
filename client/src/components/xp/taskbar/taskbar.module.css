@@ -1,0 +1,98 @@
+.taskbar {
+  background-color: #245edc;
+  background: linear-gradient(to bottom, #245edc 0%, #3f8cf3 9%, #245edc 18%, #245edc 92%, #1941a5 100%) center/cover
+    no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 32px;
+  color: #fff;
+}
+
+.taskbar,
+.taskbar * {
+  box-sizing: border-box;
+}
+
+.startButton {
+  height: 100%;
+  float: left;
+  font-size: 22px;
+  line-height: 22px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: radial-gradient(circle, #5eac56 0%, #3c873c 100%) center/cover no-repeat;
+  box-shadow:
+    0px 5px 10px #79ce71 inset,
+    4px 0 8px #3f8cf3;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 24px;
+  text-shadow: 1px 1px 3px #222;
+  border-radius: 0px 8px 8px 0px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.startButton img {
+  height: 20px;
+  filter: drop-shadow(1px 1px 1px #222);
+  margin-right: 6px;
+}
+
+.openTab {
+  width: 150px;
+  max-width: 150px;
+  height: 26px;
+  margin: 3px 0;
+  float: left;
+  background-color: #4892f7;
+  background: linear-gradient(to bottom, #387ff3 0%, #377bdf 2px, #387ff3 6px) center/cover no-repeat;
+  border: 1px solid #306fd9;
+  border-radius: 2px;
+  font-family: calibri, monospace;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.openTab:hover {
+  background: linear-gradient(to bottom, #387ff3 0%, #7ab3f9 2px, #56a0ff 6px) center/cover no-repeat;
+}
+
+.openTab.active {
+  background: #1b50b9;
+}
+
+.openTab img {
+  height: 18px;
+  margin-right: 5px;
+}
+
+.time {
+  height: 100%;
+  float: right;
+  font-family: calibri, monospace;
+  font-size: 12px;
+  line-height: 12px;
+  background: linear-gradient(to bottom, #1290e9 0%, #19b9f3 9%, #1290e9 18%, #1290e9 92%, #1941a5 100%) center/cover
+    no-repeat;
+  box-shadow:
+    0px 5px 10px #14a5f0 inset,
+    2px 2px 4px #14a5f0 inset;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  border-left: 1px solid #092e51;
+  text-shadow: 1px 1px 2px #222;
+  text-transform: uppercase;
+}

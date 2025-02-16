@@ -1,0 +1,15 @@
+.wallpaperGrid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  overflow-y: scroll;
+  min-height: 300px;
+}
+
+.wallpaperGrid img {
+  width: 100%;
+}
+
+.wallpaperGridActive {
+  opacity: 0.5;
+}

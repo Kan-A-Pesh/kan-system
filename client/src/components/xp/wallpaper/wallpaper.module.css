@@ -1,0 +1,13 @@
+.wallpaper {
+  position: fixed;
+  z-index: -9999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}

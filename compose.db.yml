@@ -1,0 +1,4 @@
+name: "kan-system"
+
+services:
+  redis:
