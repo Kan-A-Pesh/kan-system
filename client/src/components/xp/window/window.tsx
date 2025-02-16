@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import React, {useCallback, useEffect, useRef, useState} from "react";
 
-import styles from "./Window.module.css";
+import styles from "./window.module.css";
 import {Vector} from "@/types/vector";
 import {Direction} from "@/types/direction";
 
